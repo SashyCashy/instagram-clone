@@ -42,7 +42,6 @@ $ expo start
 
 ## Directory Structure
 
-```
 - 📂 **instagram\-clone**
   - 📄 [App.js](App.js)
   - 📄 [Constants.js](Constants.js)
@@ -70,5 +69,3 @@ $ expo start
     - 📄 [api.js](utils/api.js)
     - 📄 [getAvatarColor.js](utils/getAvatarColor.js)
     - 📄 [getInitials.js](utils/getInitials.js)
-  - 📄 [yarn.lock](yarn.lock)
-```
