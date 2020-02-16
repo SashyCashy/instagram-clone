@@ -7,6 +7,7 @@ An app that resembles famous social app, Instagram is built using React-Native A
 - [General Info](#general-info)
 - [Technologies](#technolgies)
 - [Setup](#setup)
+- [Directory Structure](#directory)
 
 ## General Info
 
@@ -37,4 +38,37 @@ Project is created with:
 $ expo init instagram-clone --template blank@sdk-34 --yarn
 $ cd instagram-clone
 $ expo start
+```
+
+## Directory Structure
+
+```
+- 📂 **instagram\-clone**
+  - 📄 [App.js](App.js)
+  - 📄 [Constants.js](Constants.js)
+  - 📄 [README.md](README.md)
+  - 📄 [app.json](app.json)
+  - 📂 **assets**
+    - 📄 [icon.png](assets/icon.png)
+    - 📄 [splash.png](assets/splash.png)
+  - 📄 [babel.config.js](babel.config.js)
+  - 📂 **components**
+    - 📂 **Comments**
+      - 📄 [CommentInput.js](components/Comments/CommentInput.js)
+      - 📄 [CommentList.js](components/Comments/CommentList.js)
+      - 📄 [NavigationBar.js](components/Comments/NavigationBar.js)
+      - 📄 [index.js](components/Comments/index.js)
+    - 📂 **Feed**
+      - 📄 [AuthorRow.js](components/Feed/AuthorRow.js)
+      - 📄 [Avatar.js](components/Feed/Avatar.js)
+      - 📄 [Card.js](components/Feed/Card.js)
+      - 📄 [CardList.js](components/Feed/CardList.js)
+      - 📄 [index.js](components/Feed/index.js)
+  - 📄 [node_modules](node_modules)
+  - 📄 [package.json](package.json)
+  - 📂 **utils**
+    - 📄 [api.js](utils/api.js)
+    - 📄 [getAvatarColor.js](utils/getAvatarColor.js)
+    - 📄 [getInitials.js](utils/getInitials.js)
+  - 📄 [yarn.lock](yarn.lock)
 ```
