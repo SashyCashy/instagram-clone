@@ -12,10 +12,10 @@ import {
 } from 'react-native';
 import React, { useEffect, useState } from 'react';
 
-import { fetchImages } from '../utils/api';
-import CardList from '../components/CardList';
+import { fetchImages } from '../../utils/api';
+import CardList from './CardList';
 
-export default function Feed() {
+export default function Feed({ commentsForItem, onPressComments }) {
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(true);
   const [items, setItems] = useState('');
@@ -43,7 +43,11 @@ export default function Feed() {
   }
   return (
     <SafeAreaView>
-      <CardList items={items} />
+      <CardList
+        items={items}
+        commentsForItem={commentsForItem}
+        onPressComments={onPressComments}
+      />
     </SafeAreaView>
   );
 }

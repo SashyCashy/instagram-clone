@@ -7,7 +7,7 @@
 import { StyleSheet, View, Image } from 'react-native';
 import React from 'react';
 import AuthorRow from './AuthorRow';
-import getAvatarColor from '../utils/getAvatarColor';
+import getAvatarColor from '../../utils/getAvatarColor';
 
 export default function Card({ fullName, image, linkText, onPressLinkText }) {
   return (

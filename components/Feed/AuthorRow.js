@@ -6,8 +6,8 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import React from 'react';
 import Avatar from './Avatar';
-import getAvatarColor from '../utils/getAvatarColor';
-import getInitials from '../utils/getInitials';
+import getAvatarColor from '../../utils/getAvatarColor';
+import getInitials from '../../utils/getInitials';
 
 export default function AuthorRow({ fullName, linkText, onPressLinkText }) {
   return (
@@ -21,10 +21,8 @@ export default function AuthorRow({ fullName, linkText, onPressLinkText }) {
         {fullName}
       </Text>
       {!!linkText && (
-        <TouchableOpacity onPress={onPressLinkText}>
-          <Text style={styles.linkText} numberOfLines={1}>
-            {linkText}
-          </Text>
+        <TouchableOpacity onPress={onPressLinkText} style={styles.linkText}>
+          <Text numberOfLines={1}>{linkText}</Text>
         </TouchableOpacity>
       )}
     </View>
@@ -42,7 +40,8 @@ const styles = StyleSheet.create({
     marginHorizontal: 10
   },
   linkText: {
-    marginHorizontal: 135,
-    alignItems: 'flex-end'
+    position: 'absolute',
+    right: 20,
+    justifyContent: 'center'
   }
 });
