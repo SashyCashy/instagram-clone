@@ -12,4 +12,4 @@ web-report/
 .expo-shared/*
 yarn.lock
 .watchmanconfig
-
+.DS_Store
