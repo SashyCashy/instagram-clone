@@ -7,7 +7,7 @@ An app that resembles famous social app, Instagram is built using React-Native A
 - [General Info](#general-info)
 - [Technologies](#technolgies)
 - [Setup](#setup)
-- [Directory Structure](#directory)
+- [App Structure](#directory)
 
 ## General Info
 
@@ -40,7 +40,7 @@ $ cd instagram-clone
 $ expo start
 ```
 
-## Directory Structure
+## App Structure
 
 - 📂 **instagram\-clone**
   - 📄 [App.js](App.js)
