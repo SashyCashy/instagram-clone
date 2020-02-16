@@ -6,8 +6,6 @@
 
 import { StyleSheet, TextInput, View } from 'react-native';
 import React, { useState } from 'react';
-import { getImageFromId } from '../../utils/api';
-import Card from '../Feed/Card';
 
 export default function CommentInput({ onSubmit, placeholder = '' }) {
   const [text, setText] = useState('');
