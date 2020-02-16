@@ -8,7 +8,7 @@ import { SafeAreaView, StyleSheet } from 'react-native';
 import React from 'react';
 import CommentInput from '../Comments/CommentInput';
 import CommentList from '../Comments/CommentList';
-import NavigationBar from '../NavigationBar';
+import NavigationBar from './NavigationBar';
 
 export default function Comments({ comments, onClose, onSubmitComment }) {
   return (
