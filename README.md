@@ -34,7 +34,7 @@ Project is created with:
 ### Create expo project
 
 ```
-$ expo init instagram-clone
+$ expo init instagram-clone --template blank@sdk-34 --yarn
 $ cd instagram-clone
 $ expo start
 ```
