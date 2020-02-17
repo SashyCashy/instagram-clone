@@ -48,7 +48,7 @@ export const getImageFromId = id => `https://unsplash.it/${600}/${600}?image=${i
 
 ### Create expo project
 
-````
+```
 
 $ expo init instagram-clone --template blank@sdk-34 --yarn
 $ cd instagram-clone
@@ -82,5 +82,7 @@ $ cd instagram-clone
     - 📄 [api.js](utils/api.js)
     - 📄 [getAvatarColor.js](utils/getAvatarColor.js)
     - 📄 [getInitials.js](utils/getInitials.js)
+
 ```
-````
+
+```
