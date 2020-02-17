@@ -52,7 +52,7 @@ export const getImageFromId = id => `https://unsplash.it/${600}/${600}?image=${i
 
 $ expo init instagram-clone --template blank@sdk-34 --yarn
 $ cd instagram-clone
-\$ expo start
+$ expo start
 
 ```
 
