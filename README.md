@@ -6,6 +6,7 @@ An app that resembles famous social app, Instagram is built using React-Native A
 
 - [General Info](#general-info)
 - [Technologies](#technolgies)
+- [API Source](#ap_source)
 - [Setup](#setup)
 - [App Structure](#directory)
 
@@ -22,6 +23,19 @@ Project is created with:
 - Expo (https://expo.io/learn)
 - Android SDK
 
+## API Source
+
+```
+export const fetchImages = async () => {
+const response = await fetch('https://unsplash.it/list');
+const images = await response.json();
+
+return images;
+};
+
+export const getImageFromId = id => `https://unsplash.it/${600}/${600}?image=${id}`
+```
+
 ## Setup
 
 ### Install npm Packages
@@ -34,10 +48,12 @@ Project is created with:
 
 ### Create expo project
 
-```
+````
+
 $ expo init instagram-clone --template blank@sdk-34 --yarn
 $ cd instagram-clone
-$ expo start
+\$ expo start
+
 ```
 
 ## App Structure
@@ -66,3 +82,5 @@ $ expo start
     - 📄 [api.js](utils/api.js)
     - 📄 [getAvatarColor.js](utils/getAvatarColor.js)
     - 📄 [getInitials.js](utils/getInitials.js)
+```
+````

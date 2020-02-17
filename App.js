@@ -1,7 +1,7 @@
 /**
  * Author: Sashank Pindiproli
  * Date: 15/02/20
- * Description: An app container that contains different components like Avatar, AuthorRow and Comment
+ * Description: An app container that contains different components like Feed, Comments and Modal
  */
 
 import React, { useState, useEffect } from 'react';
@@ -15,12 +15,20 @@ export default function App() {
   const [showModal, setShowModal] = useState(false);
   const [selectItemId, setSelectItemId] = useState(null);
 
+  /**
+   *
+   * @param {String} id
+   */
   const openCommentScreen = id => {
     setShowModal(true);
     setSelectItemId(id);
   };
 
-  const closeCommentScreen = id => {
+  /**
+   *
+   * @param {String} id
+   */
+  const closeCommentScreen = () => {
     setShowModal(false);
     setSelectItemId(null);
   };
@@ -35,6 +43,11 @@ export default function App() {
       console.log('Failed to load comment', text, 'for', selectItemId);
     }
   }, []);
+
+  /**
+   *
+   * @param {String} text
+   */
   const onSubmitComment = async text => {
     let comments = commentsForItem[selectItemId] || [];
     let updatedComments = {
@@ -75,9 +88,13 @@ export default function App() {
     </View>
   );
 }
-
+/**
+ *
+ * @return {Platform} version
+ */
 const platformVersion =
   Platform.OS === 'ios' ? parseInt(Platform.Version, 10) : Platform.Version;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

@@ -18,7 +18,6 @@ export default function CardList({ items, commentsForItem, onPressComments }) {
         image={{ uri: getImageFromId(id) }}
         linkText={`${comments ? comments.length : 0} Comments`}
         onPressLinkText={() => onPressComments(id)}
-        image={{ uri: 'https://unsplash.it/600/600' }}
         keyExtractor={id}
       />
     );
